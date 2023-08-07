@@ -1,7 +1,7 @@
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.kathysvegankitchen.com/vegan-pad-kee-mao/";
+   let authorPhoto = "https://www.kathysvegankitchen.com/wp-content/uploads/2022/07/Kathys-Vegan-Kitchen-Avatar-min-360x335.jpeg";
+   let authorName = "Kathy Carmichael";
 
    return (
       <div>
@@ -15,7 +15,7 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["rice vinegar", "vegetable broth", "liquid aminos or soy sauce", "brown sugar or maple syrup", "Thai red chili", "Sriracha"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -25,6 +25,7 @@ const RecipeIngredients = () => {
             <li>{ingredients[2]}</li>
             <li>{ingredients[3]}</li>
             <li>{ingredients[4]}</li>
+            <li>{ingredients[5]}</li>
          </ul>
       </div>
    );
@@ -47,7 +48,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://www.kathysvegankitchen.com/wp-content/uploads/2022/10/vegan-drunken-noodles-copy.jpg" alt="vegan drunken noodles" className="imageUpdates"/>
    );
 }
 
